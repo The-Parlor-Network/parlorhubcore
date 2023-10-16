@@ -1,0 +1,32 @@
+name: ParlorHubCore
+version: '${project.version}'
+main: dev.clxud.parlorhubcore.Plugin
+api-version: '1.20'
+author: Clxud
+description: Core plugin for Parlor Network Hub
+prefix: 'PHC'
+depend:
+  - PlaceholderAPI
+  - WorldGuard
+  - Vault
+
+
+commands:
+  goto:
+    description: Teleport to a player
+    usage: /goto <player>
+
+  servers:
+    description: Opens the server selector
+    usage: /servers
+
+
+  vegaschips:
+    description: Gives you vegas chips
+    usage: /vegaschips <player> <amount>
+    aliases: [vc]
+
+  event:
+    description: Starts/ends an event
+    usage: /event <start/end> <event> <minutes>
+    aliases: [events]
